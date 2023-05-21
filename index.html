@@ -9,19 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-pOQQ9yOaEUVo0Pf/mztwL+Q1xuTn0cT7hLy+bvND9X3Vjn0pAyo+S7VEsF1w8BJZ0mqB+JYgV7/ckr3DN9qHhA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="avatar-sk.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Global conatiner -->
-    <div class="h-screen max-h-full flex justify-center items-center bg-slate-700">
-        <div class="p-4 bg-[#22252d] w-full h-full md:w-[70%] md:h-[90%] md:rounded-xl flex items-center justify-around flex-col">
-            <nav class="p-3 flex justify-evenly items-center w-[50%] h-[8%] md:w-[20%] bg-[#3c4150] rounded-lg my-3">
-                <button><i class="fa-solid fa-sun hover:text-white"></i></button>
-                <button><i class="fa-solid fa-moon hover:text-white"></i></button>
+    <div id="global" class="h-screen max-h-full flex justify-center items-center bg-slate-700">
+        <div id="container" class="p-4 bg-[#22252d] w-full h-full md:w-[70%] md:h-[90%] md:rounded-xl flex items-center justify-around flex-col">
+            <nav id="nav" class="p-3 flex justify-evenly items-center w-[50%] h-[8%] md:w-[20%] bg-[#3c4150] rounded-lg my-3">
+                <button><i id="sun" class="fa-solid fa-sun hover:text-white"></i></button>
+                <button><i id="moon" class="fa-solid fa-moon hover:text-white"></i></button>
             </nav>
 
             <input type="text" class="p-4 bg-[#3c4150] w-full text-4xl text-white my-3 rounded-lg" id="output" readonly>
 
-            <div class="flex-grow p-4 flex flex-col w-full h-auto bg-[#292d36] my-3 rounded-lg justify-between">
+            <div id="containerTwo" class="flex-grow p-4 flex flex-col w-full h-auto bg-[#292d36] my-3 rounded-lg justify-between">
                 <!-- First Section -->
                 <div class="w-full flex justify-between items-center my-1">
                     <button class="buttonClear p-3 bg-[#282829] basis-[20%] rounded-lg text-[#26d7b8] text-4xl">AC</button>

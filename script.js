@@ -29,3 +29,26 @@ calButton.addEventListener("click",function(){
       output.value = answer;
     }
 })
+
+
+const sun = document.getElementById("sun")
+const global = document.getElementById("global")
+const container = document.getElementById("container")
+const nav = document.getElementById("nav")
+const containerTwo = document.getElementById("containerTwo")
+
+sun.addEventListener("click",function(){
+  global.classList.add("gray")
+  container.classList.add("white")
+  nav.classList.add("gray")
+  output.classList.add('gray')
+  containerTwo.classList.add('gray')
+})
+
+moon.addEventListener("click",function(){
+  global.classList.remove("gray")
+  container.classList.remove("white")
+  nav.classList.remove("gray")
+  output.classList.remove('gray')
+  containerTwo.classList.remove('gray')
+})
